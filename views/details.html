@@ -1,0 +1,15 @@
+<div>
+    <form action="edit">
+        <label>First Name</label><input type="text" ng-model="coworker.firstName">
+        <label>Last Name</label>
+        <input type="text" ng-model="coworker.lastName">
+        <label>Nickname</label><input type="text" ng-model="coworker.nickname">
+        <label>Description</label><input type="text" ng-model="coworker.description">
+        <label>funFacts</label><input type="text" ng-model="coworker.funFacts">
+
+        <button class="btn" ng-click="coworker.$save()">Save</button>
+        <button class="btn" ng-click="removeCoworker(coworker)">Delete</button>
+    </form>
+    <hr>
+    <a ng-class="{ 'disabled' : itemID >= 4 }" href="/#!/details/{{+itemID + 1}}" class="btn btn-primary pull-right">Next</a>
+    <a ng-class="{ 'disabled' : itemID <= 1 }" href="/#!/details/{{+itemID - 1}}" class="btn btn-primary pull-left">Back</a>

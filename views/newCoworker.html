@@ -1,0 +1,22 @@
+<div>
+    <h3>Add a new coworkwer</h3>
+    <form ng-submit="addCoworker()">
+        <label for="firstName">First Name</label>
+        <input type="text" ng-model="newCoworker.firstName" placeholder="John">
+
+        <label for="lastName">Last Name</label>
+        <input type="text" ng-model="newCoworker.lastName" placeholder="Smith">
+
+        <label for="nickname">Nickname</label>
+        <input type="text" ng-model="newCoworker.nickname" placeholder="Wisdom" maxlength="10">
+
+        <label for="description">Description</label>
+        <input type="text" ng-model="newCoworker.description" placeholder="This is a descrition">
+
+        <label for="funFacts">Funfacts</label>
+        <input type="text" ng-model="newCoworker.funFacts" placeholder="This is a fun fact">
+
+        <input type="submit" value="Add" class="button">
+        <a href="/#!/" class="btn">Cancel</a>
+    </form>
+</div>

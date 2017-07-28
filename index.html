@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Assignment 1 - MTM6430</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="fireApp">
+    <!-- Navigation -->
+    <main>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+
+                    <span><img src="images/smallcolor_icos.png" width="60px" height="60px"> <h1 class="pull-right">Getting to know your coworkers</h1></span>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- /.container -->
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <div class="container" ng-controller="coworkerCtrl">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <ul>
+                            <li><a href="/#!/details-all" class="nav-links h3">All</a></li>
+                            <li ng-repeat="coworker in coworkerList track by coworker.$id">
+                                <a ng-href="/#!/details/{{coworker.$id}}" class="nav-links h4">{{coworker.firstName}} {{coworker.lastName}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9" ng-view></div>
+
+        </div>
+
+        <!-- /.container -->
+        <hr>
+        <!-- Footer -->
+        <footer>
+
+            <div class="col-md-12">
+                <p>Copyright &copy; Chez DD 2017</p>
+            </div>
+
+        </footer>
+    </main>
+    <!-- /.container -->
+
+    <!-- Import Angular components -->
+    <!--Load Angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!--Load firebase-->
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <!--Load Angularfire-->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    <!--Load ngRoute-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

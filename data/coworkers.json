@@ -1,0 +1,38 @@
+[
+    {
+    "id": "1",
+    "firstName": "John",
+    "lastName": "Dorion",
+    "nickname": "Grand Poobah",
+    "description": "",
+    "funFacts": "Can carry on a simple conversation in Mandarin Chinese.  Once moved across the country in a 1979 Mercury Montego with only $300.",
+    "picture": "/images/id-1.jpg"
+  },
+  {
+    "id": "2",
+    "firstName": "Neil",
+    "lastName": "Lucas",
+    "nickname": "",
+    "description": "Tall skinny white dude with no rhythm.",
+    "funFacts": "Has been gassed, irradiated, burned and still didn’t become a super hero.",
+    "picture": "/images/id-2.jpg"
+  },
+  {
+   "id": "3",
+    "firstName": "Brendan",
+    "lastName": "Bronzan",
+    "nickname": "",
+    "description": "Multi-cellular lifeform. Human. Male.",
+    "funFacts": "I take photos of space (astrophotography) which includes the Moon, planets and distance objects like galaxies and nebulae. I compose instrumental soundtrack music suitable for things like videos, movies or video games. A sandwich is a perfect way to eat something. It’s fully customizable, portable and doesn’t require dishes of any kind.",
+    "picture": "/images/id-3.jpg"
+    },
+   {
+   "id": "4",
+    "firstName": "Timothee",
+    "lastName": "Reznes",
+    "nickname": "Wisdom Wizard",
+    "description": "",
+    "funFacts": "A pun is just fun mispellt",
+    "picture": "/images/id-4.jpg"
+  }
+]
